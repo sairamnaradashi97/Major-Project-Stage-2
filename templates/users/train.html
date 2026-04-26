@@ -1,0 +1,75 @@
+{% extends 'users/userbase.html' %}
+{% block contents %}
+{% load static %}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fa;
+        margin: 20px;
+    }
+
+    .result-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        max-width: 800px;
+        margin-left: 350px; /* Move it to the right */
+        margin-right: 50px; /* Distance from the right border */
+        margin-top: 40px;
+    }
+
+    h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: #34495e;
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    pre {
+        background-color: #ecf0f1;
+        padding: 20px;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    img {
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: transform 0.2s;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<div class="result-container">
+    <h2>Model Training Results</h2>
+    <p><strong>Accuracy:</strong> {{ accuracy }}</p>
+    <p><strong>ROC AUC:</strong> {{ roc_auc }}</p>
+
+    <h3>Classification Report</h3>
+    <pre>{{ report }}</pre>
+
+    <div style="text-align: center;">
+        <img src="{% static 'confusion_matrix.png' %}" width="400">
+        <img src="{% static 'roc_curve.png' %}" width="400">
+    </div>
+</div>
+
+{% endblock %}

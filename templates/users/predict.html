@@ -1,0 +1,203 @@
+<!-- 
+
+<h2>Make a Prediction</h2>
+<form method="POST">
+    {% csrf_token %}
+    Coupon Discount Level: <input name="coupon" placeholder="e.g., 20%"><br><br>
+    Quantity Discount Level: <input name="quantity" placeholder="e.g., Buy 2 Get 1"><br><br>
+    Time on Page (seconds): <input name="time" type="number"><br><br>
+    Added to Cart: <input name="cart" placeholder="Yes or No"><br><br>
+    Time of Interaction: <input name="interaction" placeholder="e.g., Monday 08 AM"><br><br>
+    Device: <input name="device" placeholder="e.g., Mobile"><br><br>
+    Product Price ($): <input name="price" type="number" step="0.01"><br><br>
+    Product Rating (stars): <input name="rating" type="number" step="0.1"><br><br>
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction %}
+    <h3>Predicted Purchase: {{ prediction }}</h3>
+    <p>Probability: {{ probability|floatformat:4 }}</p>
+{% endif %} -->
+
+<!-- To style your code and center it, you can use the <style> tag and some CSS. Here's an updated version of your code with styling added:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Make a Prediction</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                width: 100%;
+                text-align: center;
+            }
+            input {
+                width: calc(100% - 10px);
+                margin-bottom: 15px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            h2 {
+                color: #333;
+            }
+            h3, p {
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            <h2>Make a Prediction</h2>
+            Coupon Discount Level: <input name="coupon" placeholder="e.g., 20%"><br>
+            Quantity Discount Level: <input name="quantity" placeholder="e.g., Buy 2 Get 1"><br>
+            Time on Page (seconds): <input name="time" type="number"><br>
+            Added to Cart: <input name="cart" placeholder="Yes or No"><br>
+            Time of Interaction: <input name="interaction" placeholder="e.g., Monday 08 AM"><br>
+            Device: <input name="device" placeholder="e.g., Mobile"><br>
+            Product Price ($): <input name="price" type="number" step="0.01"><br>
+            Product Rating (stars): <input name="rating" type="number" step="0.1"><br>
+            <button type="submit">Predict</button>
+        </form>
+    
+        {% if prediction %}
+            <h3>Predicted Purchase: {{ prediction }}</h3>
+            <p>Probability: {{ probability|floatformat:4 }}</p>
+        {% endif %}
+    </body>
+    </html>
+    
+    
+     -->
+
+
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Prediction</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6e85b7, #b2c8df);
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        input {
+            width: calc(100% - 20px);
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        input:focus {
+            border-color: #4CAF50;
+            box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+            outline: none;
+        }
+        button {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 17px;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #45a049, #4CAF50);
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        h3 {
+            color: #444;
+            font-size: 18px;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body >
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Make a Prediction</h2>
+        Coupon Discount Level: <input name="coupon" placeholder="e.g., 20%"><br>
+        Quantity Discount Level: <input name="quantity" placeholder="e.g., Buy 2 Get 1"><br>
+        Time on Page (seconds): <input name="time" type="number"><br>
+        Added to Cart: <input name="cart" placeholder="Yes or No"><br>
+        Time of Interaction: <input name="interaction" placeholder="e.g., Monday 08 AM"><br>
+        Device: <input name="device" placeholder="e.g., Mobile"><br>
+        Product Price ($): <input name="price" type="number" step="0.01"><br>
+        Product Rating (stars): <input name="rating" type="number" step="0.1"><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Predicted Purchase: {{ prediction }}</h3>
+        <!-- <p>Probability: {{ probability|floatformat:4 }}</p> -->
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends 'admins/adminbase.html' %}
+{% load static %}
+{% block contents %}
+
+<style>
+    .admin-home-container {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .admin-home-container h2 {
+        font-size: 2.2rem;
+        color: #295b8d;
+        margin-bottom: 20px;
+    }
+
+    .admin-home-container p {
+        font-size: 1.1rem;
+        color: #444;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto 15px;
+    }
+</style>
+
+<div class="admin-home-container">
+    <h2>Welcome to  Admin Panel</h2>
+    <p>
+        The study uses machine learning models like Random Forest, Decision Tree, 
+        and Logistic Regression to predict customer purchasing behavior on 
+        , finding that discounts, especially coupons and quantity discounts, are 
+        
+    </p>
+    <p>
+        the most influential factors.It highlights the power of feature engineering 
+        and model tuning in achieving high prediction accuracy. 
+    </p>
+</div>
+
+{% endblock %}

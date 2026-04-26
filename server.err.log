@@ -1,0 +1,86 @@
+Watching for file changes with StatReloader
+[15/Apr/2026 11:03:12] "GET / HTTP/1.1" 200 6008
+[15/Apr/2026 11:03:12,842] - Broken pipe from ('127.0.0.1', 55518)
+[15/Apr/2026 11:04:14] "GET / HTTP/1.1" 200 6008
+Not Found: /favicon.ico
+[15/Apr/2026 11:04:14] "GET /favicon.ico HTTP/1.1" 404 4973
+[15/Apr/2026 11:04:24] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 11:05:32] "POST /AdminLogincheck HTTP/1.1" 200 3823
+[15/Apr/2026 11:05:32] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:05:36] "GET /userDetails HTTP/1.1" 200 6023
+[15/Apr/2026 11:05:36] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:06:40] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 11:06:45] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 11:06:49] "GET /UserRegisterForm HTTP/1.1" 200 8664
+[15/Apr/2026 11:08:10] "POST /UserRegisterForm HTTP/1.1" 200 8775
+[15/Apr/2026 11:08:18] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 11:08:21] "POST /AdminLogincheck HTTP/1.1" 200 3823
+[15/Apr/2026 11:08:21] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:08:24] "GET /userDetails HTTP/1.1" 200 6598
+[15/Apr/2026 11:08:24] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:08:52] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 11:08:55] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 11:18:50] "POST /UserLoginCheck/ HTTP/1.1" 200 7347
+[15/Apr/2026 11:18:54] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 11:18:57] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 11:18:59] "POST /AdminLogincheck HTTP/1.1" 200 3823
+[15/Apr/2026 11:18:59] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:19:04] "GET /userDetails HTTP/1.1" 200 6598
+[15/Apr/2026 11:19:04] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:19:06] "GET /ActivUsers/?uid=5 HTTP/1.1" 302 0
+[15/Apr/2026 11:19:06] "GET /userDetails HTTP/1.1" 200 6611
+[15/Apr/2026 11:19:06] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:19:09] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 11:19:21] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 11:19:38] "POST /UserLoginCheck/ HTTP/1.1" 200 3661
+[15/Apr/2026 11:19:38] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:19:38] "GET /static/css/styles.css HTTP/1.1" 404 1856
+[15/Apr/2026 11:19:44] "GET /predict HTTP/1.1" 200 6805
+[15/Apr/2026 11:19:47,718] - Broken pipe from ('127.0.0.1', 61880)
+C:\Users\SAI\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[15/Apr/2026 11:21:06] "POST /predict HTTP/1.1" 200 7129
+C:\Users\SAI\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[15/Apr/2026 11:22:40] "POST /predict HTTP/1.1" 200 7129
+[15/Apr/2026 11:23:52] "GET /predict HTTP/1.1" 200 6805
+[15/Apr/2026 11:24:25] "GET / HTTP/1.1" 200 6008
+[15/Apr/2026 11:31:32] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 11:31:34] "POST /AdminLogincheck HTTP/1.1" 200 3823
+[15/Apr/2026 11:31:34] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:31:38] "GET /userDetails HTTP/1.1" 200 6611
+[15/Apr/2026 11:31:38] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:31:43] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 11:31:45] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 11:31:59] "POST /UserLoginCheck/ HTTP/1.1" 200 3661
+[15/Apr/2026 11:31:59] "GET /static/css/styles.css HTTP/1.1" 404 1856
+[15/Apr/2026 11:31:59] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:32:05] "GET /predict HTTP/1.1" 200 6805
+[15/Apr/2026 11:32:10] "GET /static/css/styles.css HTTP/1.1" 404 1856
+[15/Apr/2026 11:32:16] "GET /train_model/ HTTP/1.1" 200 4525
+[15/Apr/2026 11:32:16] "GET /static/css/styles.css HTTP/1.1" 404 1856
+[15/Apr/2026 11:32:16] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 11:32:17] "GET /static/confusion_matrix.png HTTP/1.1" 200 13738
+[15/Apr/2026 11:32:17] "GET /static/roc_curve.png HTTP/1.1" 200 17034
+[15/Apr/2026 11:32:23] "GET /predict HTTP/1.1" 200 6805
+[15/Apr/2026 11:32:30] "GET / HTTP/1.1" 200 6008
+[15/Apr/2026 11:38:10] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 11:38:15] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 12:49:47] "GET /Adminlogin HTTP/1.1" 200 7873
+[15/Apr/2026 12:49:49] "POST /AdminLogincheck HTTP/1.1" 200 3823
+[15/Apr/2026 12:49:49] "GET /static/img/bg5.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 12:49:53] "GET /userDetails HTTP/1.1" 200 6611
+[15/Apr/2026 12:49:53] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 12:50:04] "GET /index/ HTTP/1.1" 200 6008
+[15/Apr/2026 12:50:07] "GET /UserLogin HTTP/1.1" 200 7183
+[15/Apr/2026 12:50:26] "POST /UserLoginCheck/ HTTP/1.1" 200 7347
+[15/Apr/2026 12:50:43] "POST /UserLoginCheck/ HTTP/1.1" 200 3661
+[15/Apr/2026 12:50:44] "GET /static/css/styles.css HTTP/1.1" 404 1856
+[15/Apr/2026 12:50:44] "GET /static/img/bg4.jpg HTTP/1.1" 404 1847
+[15/Apr/2026 12:50:50] "GET /predict HTTP/1.1" 200 6805
+C:\Users\SAI\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\base.py:463: InconsistentVersionWarning: Trying to unpickle estimator LabelEncoder from version 1.6.1 when using version 1.8.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+[15/Apr/2026 12:51:34] "POST /predict HTTP/1.1" 200 7129
