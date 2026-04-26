@@ -94,3 +94,6 @@ Sai Ram Naradashi
 📄 License
 
 This project is for academic and learning purposes.
+
+# Deploy Link
+https://major-project-stage-2.onrender.com
